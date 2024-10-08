@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify Playlist</title>
+    <link rel="stylesheet" href="./assets/bootstrap-5.3.3-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="./assets/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+
+<body data-bs-theme="">
+    <nav class="navbar ">
+        <ul class="d-flex justify-content-between align-items-center w-100">
+            <li class="brand">
+                <img src="./assets/images/Spotify_Primary_Logo_RGB_White.png" alt="">
+            </li>
+            <li class="search-bar d-flex">
+                <button class="home-btn rounded-circle"><abbr data-title="Home" class="cursor-help"><i class="bi bi-house text-white px-2"></i></abbr></button>
+                <div class="searching-section mx-2"><i class="bi bi-search text-white"></i>
+                    <input type="search" placeholder="What do you want to play?"><span
+                        class="text-white fs-3 px-2">I</span><i class="bi bi-bag-dash text-white fs-4"></i>
+                </div>
+            </li>
+            <li>
+                <div class="btn text-white " id="log-in-btn">Sign up</div>
+                <div class="btn text-dark bg-white" id="log-in-btn"><b>Log in</b></div>
+            </li>
+        </ul>
+    </nav>
+    <main class="d-flex justify-content-between">
+        <div class="left-section ">
+            <h6 class="d-flex justify-content-between align-items-center w-100 px-4 text-white">
+                <i class="bi bi-collection text-white fs-4"></i>
+                Your Library:
+                <i class="bi bi-plus-lg plus-home-btn fs-4"></i>
+
+            </h6>
+            <div class="create-play-list text-white p-1">
+                <div class="btn text-white">Artist</div>
+            </div>
+            <div class="artist-search d-flex p-1">
+                <i class="bi bi-search text-white p-1"></i>
+                <input type="search" placeholder="Search in your library">
+            </div>
+            <div class="artists text-white d-flex flex-column gap-2 p-1">
+                <div class="artist-list d-flex">
+                    <img src="./assets/images/REV_VIVIZ_HEADER.jpg" alt="">
+                    <div class="artist-list-name d-flex flex-column">
+                        VIVIZ
+                        <p>artist</p>
+                    </div>
+                </div>
+                <div class="artist-list d-flex">
+                    <img src="./assets/images/REV_VIVIZ_HEADER.jpg" alt="">
+                    <div class="artist-list-name d-flex flex-column">
+                        VIVIZ
+                        <p>artist</p>
+                    </div>
+                </div>
+                <div class="artist-list d-flex">
+                    <img src="./assets/images/REV_VIVIZ_HEADER.jpg" alt="">
+                    <div class="artist-list-name d-flex flex-column">
+                        VIVIZ
+                        <p>artist</p>
+                    </div>
+                </div>
+
+                <div class="artist-list d-flex">
+                    <img src="./assets/images/REV_VIVIZ_HEADER.jpg" alt="">
+                    <div class="artist-list-name d-flex flex-column">
+                        VIVIZ
+                        <p>artist</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <article class="mid-section  w-100 px-2 mx-2" id="">
+            <div class="playlist-img text-white">
+                <img src="./assets/images/IMG_0350-1536x1023.webp" alt="">
+                <div class="artist-details">
+                    <i class="bi bi-patch-check-fill""></i>
+                    Verified Artist
+                    <h1 class="" data-bs-target="#artists" data-bs-toggle="modal">VIVIZ</h1>
+                    <p>1,757,347 monthly listeners</p>
+                </div>
+                <div class="text-white d-flex align-items-center fs-1 gap-2">
+                    <i class="bi bi-play-circle-fill fs-1 text-success" id="masterPlayBig"></i>
+                    <div class="btn text-white follow">follow</div>
+                    <i class="bi bi-three-dots"></i>
+                    
+                </div>
+            </div>
+            <div class="music-list" id="music-list">
+
+
+
+
+
+
+            </div>
+            <div>
+                <p class="text-white py-3 fs-3"><strong>About </strong></p>
+                <div class="card-img bg-transparent">
+
+                    <img src="./assets/images/osaehXN9IYSM74hrqK4aG5QGNBPoypsK6QK2X04UqtSRhbxpJ6VBpaOfGbIOtToDvOgDZE4eMop65He8MP_16g.webp"
+                        alt="" class=".card-header-img opacity-50">
+                    <div class="detail-of-artist">
+                        <p class="opacity-75 d-flex justify-content-between text-white">
+                            1,757,347 monthly listeners
+                        </p>
+                        <p class="text-white">
+                            VIVIZ is a South Korea Girl group formed by BPM Entertainment. The group consists of former
+                            members: Eunha, SinB, and Umji. The group debuted on February 9, 2022, with their first
+                            extended play <a href="#" class="text-white"><b>The 1st mini album 'Beam Of Prism'</b></a>
+                        </p>
+                    </div>
+
+
+
+
+
+
+                </div>
+            </div>
+            <footer class="footer d-flex coljustify-content-around text-white px-4 text-center gap-2">
+                <div class="contact">
+                    <div class="d-flex align-items-center row gap-2">
+                        <p>Company</p>
+                        <a href="">about</a>
+                        <a href="">Jobs</a>
+                        <a href="">For The Record</a>
+                    </div>
+                </div>
+                <div class="contact">
+                    <div class="d-flex align-items-center row gap-2">
+                        <p>Communities</p>
+                        <a href="">For Artists</a>
+                        <a href="">Developers</a>
+                        <a href="">Advertising</a>
+                        <a href="">Investers</a>
+                        <a href="">Vendors</a>
+                    </div>
+                </div>
+                <div class="contact">
+                    <div class="d-flex align-items-center row gap-2">
+                        <p>Usefull links</p>
+                        <a href="">Support</a>
+                        <a href="">Free Mobile App</a>
+                        <a href="">about</a>
+                    </div>
+                </div>
+                <div class="contact">
+                    <div class="d-flex align-items-center row gap-2">
+                        <p>Spotify Plans</p>
+                        <a href="">Premium</a>
+                        <a href="">Individual</a>
+                        <a href="">premium Duo</a>
+                        <a href="">Premium Family</a>
+                        <a href="">Premium Student</a>
+                        <a href="">Spotify Free </a>
+                    </div>
+                </div>
+                <div class="contact text-center">
+                    <div class="d-flex align-items-center gap-2 ">
+                        
+                        <a href=""><i class="bi bi-instagram"></i></a>
+                        <a href=""><i class="bi bi-twitter-x"></i></a>
+                        <a href=""><i class="bi bi-facebook"></i></a>
+                    </div>
+                </div>
+                
+            </footer>
+        </article>
+
+        <div class="right-section text-white" id="artists">
+            <h4 class="d-flex justify-content-between align-items-center w-100 px-4 text-white">
+                <a href="#" class="text-white">VIVIZ</a>
+                <div class=" d-flex">
+                    <i class="bi bi-three-dots"></i>
+                    <i class="bi bi-x-lg plus-home-btn fs-4"></i>
+                </div>
+            </h4>
+
+            <div class="played-music-img">
+                <img src="./assets/images/REV_VIVIZ_HEADER.jpg" alt="">
+            </div>
+            <div class="music-played text-white d-flex justify-content-between p-2">
+                <div>
+                    <a href="#" class="fs-4 text-white"> So_Special</a>
+                    <p class="text-secondary">VIVIZ</p>
+                </div>
+                <div>
+                    <i class="bi bi-box-arrow-up" id="copy-music-link"></i>
+                    <i class="bi bi-plus-circle" id="add-to-liked-song"></i>
+                </div>
+            </div>
+            <div class="about-artist px-3">
+                <img src="./assets/images/osaehXN9IYSM74hrqK4aG5QGNBPoypsK6QK2X04UqtSRhbxpJ6VBpaOfGbIOtToDvOgDZE4eMop65He8MP_16g.webp"
+                    alt="">
+                <p class="text-white"><strong>About the artist</strong></p>
+
+                <div class="text-white fw-bold ">VIVIZ</div>
+                <div class="opacity-75 d-flex justify-content-between follow-artist">1,757,347 monthly listeners <div
+                        class="btn text-white py-1">follow</div>
+                </div>
+                <div class="artist-summery opacity-75">
+                    <summary>
+                        VIVIZ is a South Korea Girl group formed by BPM Entertainment. The group consists of former
+                        members: Eunha, SinB, and Umji. The group debuted on February 9, 2022, with their first extended
+                        play
+                    </summary>
+                </div>
+
+            </div>
+
+        </div>
+
+    </main>
+
+    <div class="player d-flex justify-content-between">
+        <div class="d-flex gap-1">
+            <img src="./assets/images/1000220964.jpg" class="current-audio-img" alt="">
+            <a href="#" class="text-white current-audio-title">Untie</a>
+        </div>
+        <div class="timer-play px-2">
+
+            <input type="range" id="myProgressBar" min="0" max="100" value="0">
+            <div class="text-white play-btns fs-4">
+                <span class="time">00:00</span>
+                <i class="bi bi-shuffle"></i>
+                <i class="bi bi-chevron-double-left"></i>
+                <i class="bi bi-play play-btns" id="masterPlayDown"></i>
+                <i class="bi bi-stop"></i>
+                <i class="bi bi-chevron-double-right"></i>
+                <i class="bi bi-repeat"></i>
+                <i class="bi bi-repeat-1"></i>
+            </div>
+        </div>
+        <div class="text-white px-2 gap-1 d-flex">
+
+            <i class="bi bi-file-play"></i>
+            <i class="bi bi-mic"></i>
+            <i class="bi bi-mic-mute"></i>
+            <i class="bi bi-list"></i>
+            <i class="bi bi-speaker"></i>
+            <i class="bi bi-volume-down"></i>
+            <i class="bi bi-volume-mute"></i>
+            <input type="range" id="mySoundssBar" value="0" min="0" max="100">
+            <i class="bi bi-back"></i>
+            <i class="bi bi-arrows-angle-expand"></i>
+            <i class="bi bi-arrows-angle-contract"></i>
+        </div>
+    </div>
+
+    <script src="https://kit.fontawesome.com/792a7df22c.js" crossorigin="anonymous"></script>
+    <script src="./assets/script.js"></script>
+</body>
+
+</html>

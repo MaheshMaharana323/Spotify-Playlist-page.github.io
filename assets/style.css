@@ -1,0 +1,448 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #000;
+    height: 100vh;
+}
+nav img{
+    width: 35px;
+    height: 35px;
+    color: rgb(43, 104, 158);
+}
+nav{
+    background-color: var(--bs-black);
+    
+}
+ul{
+    list-style: none;
+    margin: 0;
+    padding-left: 10px;
+    position: sticky;
+    top: 0;
+}
+@media (max-width:600px) {
+    body{
+        padding: 5px !important;
+    }
+    ul{
+        
+        flex-direction: column;
+    }
+    ul input{
+        width: 100px;
+    }
+    main {
+        justify-content: space-evenly;
+        flex-direction: column;
+        
+    }
+    main .left-section{
+        height: 200px !important;
+        width: 100% !important;
+    }
+    main .mid-section{
+        margin: 0 !important;
+        margin: 5px 0 !important;
+    }
+    main .right-section{
+       display: none;
+    }
+    .player{
+        flex-direction: column;
+        background-color: #000 !important;
+    }
+    .time{
+        position: absolute;
+        
+        left: 10px !important;
+    }
+    .footer{
+        padding: 10px;
+        flex-direction: column !important;
+    }
+    
+}
+#log-in-btn{
+    border-radius: 50px;
+}
+input{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    padding: 2px;
+    width: 300px;
+    color: #fff;
+}
+.search-bar{
+    
+    background:transparent;
+    border-radius: 30px;
+}
+.home-btn{
+    background: var(--bs-secondary-color);
+    border: none;
+    padding:  7px;
+    font-size: 30px;
+
+}
+.plus-home-btn{
+    background: var(--bs-secondary-color);
+    border: none;
+    background:transparent;
+}
+.searching-section{
+    padding: 10px;
+    background-color:  var(--bs-secondary-color);
+    border-radius: 30px;
+}
+main .left-section{
+    background-color: #15141493;
+    width: 500px;
+    border-radius: 20px;
+    height: 660px;
+   
+    padding: 10px;
+    overflow-y: auto; 
+    overflow-x: hidden;
+    
+}
+
+.left-section,.mid-section,.right-section::-webkit-scrollbar-track {
+    background: transparent; 
+}
+
+.left-section,.mid-section,.right-section::-webkit-scrollbar-thumb {
+    border: none;
+}
+
+.left-section,.mid-section,.right-section::-webkit-scrollbar-thumb:hover {
+    background-color: #cfc1c10a; 
+}
+
+.left-section ,.mid-section,.right-section{
+    
+    scrollbar-color: #ffffff33 transparent;
+}
+.left-section h4{
+    
+    margin-top: 40px ;
+    
+}
+.mid-section{
+    background-color: #15141493;
+    height: 660px;
+    overflow-y: auto; 
+    overflow-x: hidden;
+    border-radius: 20px;
+    
+    position: relative;
+}
+.mid-section img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.artist-details{
+    position: absolute;
+    top: 170px;
+    left: 30px;
+    h1{
+        font-size:50px;
+        font-weight: 900;
+    }
+    i{
+        color: #00c8ff;
+    }
+}
+.music {
+    position: relative;
+    padding: 3px;
+    margin: 20px;
+    
+    align-items: center;
+}
+
+.bi-play-fill {
+    position: absolute;
+    left: 15px;
+    top: 10px;
+    cursor: pointer;
+}
+.bi-pause-fill{
+    position: absolute;
+    left: 15px;
+    top: 10px;
+    cursor: pointer;
+}
+.bi-pause-fill:hover {
+    padding: 0 !important;
+}
+
+.bi-play-fill:hover {
+    padding: 0 !important;
+}
+
+.title-song {
+    overflow: hidden;
+    text-overflow: ellipsis;  
+    white-space: nowrap;    
+}
+a{
+    color: #fff;
+    text-decoration: none;
+    &:hover{
+        text-decoration: underline;
+    }
+}
+.follow{
+    border: 1px solid;
+    border-radius: 15px;
+}
+
+.cursor-help[title]{
+    position: relative;
+    cursor: pointer;
+}
+.cursor-help[title]::after{
+    content: attr(data-title);
+    visibility: hidden;
+    background-color: #393434;
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+    border-radius: 10px;
+    padding: 5px;
+    position: absolute;
+    
+    top: 125%; 
+    left: 50%;
+    transform: translateX(-50%);
+    
+   
+}
+.cursor-help[title]:hover::after{
+    visibility: visible;
+    opacity: 1;
+}
+p {
+    margin-bottom: 0;
+    cursor: pointer;
+}
+
+.music img {
+    height: 40px;
+    width: 40px;
+    position: relative;
+}
+
+.music-list{
+    background-color:#211f1f57;
+    
+}
+.played-music-img img{
+    height: 250px;
+    width:250px;
+    object-fit: cover;
+    padding: 5px;
+    border-radius: 10px;
+}
+.about-artist img{
+    height: 250px;
+    width: 250px;
+    object-fit: cover;
+    padding: 5px;
+    border-radius: 10px;
+    opacity: 70%;
+}
+.about-artist{
+    position: relative;
+    height: 350px;
+    overflow: hidden;
+}
+.about-artist p{
+    position: absolute;
+    top: 10px;
+    left: 30px;
+}
+.artist-summery{
+    height: 100px;
+    padding-top: 10px;
+    list-style: none;
+}
+
+main .right-section{
+    background-color: #15141493;
+    width: 550px;
+    border-radius: 20px;
+    height: 660px;
+   
+    
+    overflow-y: auto; 
+    overflow-x: hidden;
+}
+main .right-section h4{
+    width: 300px;
+    margin-top: 20px;
+    
+}
+.player{
+    min-height:100px;
+    background-color: #00000062;
+    position: sticky;
+    top: auto;
+    bottom: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.player img{
+    height: 90px;
+    width: 90px;
+    object-fit: cover;
+    
+
+}
+#myProgressBar{
+    width: 60%;
+    margin: 0px 10px;
+    border: none; 
+    border-radius: 10px; 
+    
+    cursor: pointer;
+    
+}
+.play-btns{
+    position: relative;
+}
+.time{
+    position: absolute;
+    font-size: 13px;
+    bottom: 46px;
+    left: 50px;
+}
+#myProgressBar::-webkit-progress-value {
+    background-color: #4caf50; /* The fill color */
+    border-radius: 10px; /* Rounded fill */
+}
+#mySoundssBar{
+    width: 100px;
+    cursor: pointer;
+}
+#myProgressBar::-webkit-progress-value {
+    background-color: #4caf50; /* The fill color */
+    border-radius: 10px; /* Rounded fill */
+}
+i{
+    color: #c8c5c5;
+}
+ i:hover{
+    cursor: pointer;
+    border-radius: 50px;
+    padding:0 5px;
+    transform:scale(1.1);
+    transition: 0.3s;
+    color: #fff;
+}
+
+.timer-play{
+    width: 100%;
+    text-align: center;
+}
+
+.artist-search{
+    background-color:#cfc1c10a;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.artists img{
+    height: 40px;
+    width: 40px;
+    object-fit: cover;
+    border-radius: 50px;
+}
+.artist-list{
+    align-items: center;
+}
+.artist-list-name{
+    
+    padding-left: 4px;
+}
+.card-img img{
+   height: 500px !important;
+    position: relative;
+}
+
+.detail-of-artist{
+    position: absolute;
+    bottom: -550px;
+    padding-bottom: 30px;
+    padding:30px 10px;
+}
+.contact{ 
+    padding-top: 20px;
+    a{
+        color: #ffffff6d;
+        &:hover{
+            color: #fff;
+        }
+    }
+    i{
+        background-color: #ffffff33;
+        padding: 10px;
+        border-radius: 75px;
+        &:hover{
+            background-color: #ffffff7d;
+        }
+    }
+}
+
+/* Style the range input (progress bar) */
+input[type=range] {
+    -webkit-appearance: none; /* Removes default appearance */
+    width: 100%; /* Full width */
+    height: 1px; /* Height of the progress bar */
+    background: #fff; /* Background color of the progress bar */
+    border-radius: 5px; /* Rounded corners */
+     /* Remove outline */
+    
+}
+
+/* Style the slider thumb (the circle that you drag) */
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Removes default thumb styling */
+    appearance: none;
+    width: 10px; /* Width of the thumb */
+    height: 10px; /* Height of the thumb */
+    background: #b92828; /* Green thumb */
+    border-radius: 50%; /* Make the thumb circular */
+    cursor: pointer; /* Pointer cursor on hover */
+     /* Optional shadow */
+     /* Smooth transition */
+}
+
+input[type=range]:hover::-webkit-slider-thumb {
+    background: #00cb0a; /* Change thumb color on hover */
+}
+
+/* For Firefox */
+input[type=range]::-moz-range-thumb {
+    width: 0px;
+    height: 0px;
+    background: #4c4eaf;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+}
+
+input[type=range]::-ms-thumb {
+    width: 10px;
+    height: 10px;
+    background: #4CAF50;
+    border-radius: 50%;
+    cursor: pointer;
+}
